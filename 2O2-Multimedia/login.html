@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+ <head>
+ <meta charset = "UTF-8">
+  	<title>2O2-Multimedia | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ </head>
+ <body>
+
+
+    <div class="header ">
+
+
+        <div class="container ">
+            <div class="navbar ">
+                <div class="logo ">
+                    <a href="home.html "><img src="Photos\logo.png " width="125px "></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="home.html ">Home</a></li>
+                        <li><a href="product.html ">Product</a></li>
+                        <li><a href="about.html ">About</a></li>
+                        <li><a href="contact.html ">Contact</a></li>
+                        <li><a href="account.html ">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="Photos\cart.png " width="30px " height="30px ">
+                <img src="https://img.icons8.com/material-two-tone/24/000000/menu--v2.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+            <div class=" row ">
+                <div class="col-2 ">
+                    <h1>Give Your Workout<br> A New Style!</h1>
+                    <p>lala la</p>
+                    <a href=" " class="buton ">Explore Now &#8594;</a>
+                </div>
+
+                <div class="col-2 ">
+                    <img src="Photos\homepageImage.png ">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- start of page main section -->
+      <main id="main">
+
+<div class="login-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-2"> 
+				<img src="login.png"width="1550" height="750" >
+		</div>
+
+		<div class="col-2">
+				<div class="form-container">
+					<div class="form-btn">
+						
+						<span onclick="Register()">Register</span>
+						<span onclick="Login()">Login</span>
+						<hr id="Indicator">
+					</div>
+
+					<form id="LoginForm">
+						<input type="text" placeholder="Username">
+						<input type="password" placeholder="Password">
+						<button type="submit" class="btn">Login</button>
+						<a href="">Forgot password</a>
+					</form>
+
+					<form id="RegForm">
+						<input type="text" placeholder="Username">
+						<input type="email" placeholder="Email">
+						<input type="password" placeholder="Password">
+						<button type="submit" class="btn">Register</button>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+ </body>
+ </html>
+<!-----------toggle form for login and register--->
+
+	<script>
+
+		var LoginForm= document.getElementById("LoginForm");
+		var RegForm= document.getElementById("RegForm");
+		var Indicator= document.getElementById("Indicator");
+
+		
+		function Login(){
+
+			RegForm.style.transform="translateX(300px)";
+			LoginForm.style.transform="translateX(300px)";
+			Indicator.style.transform="translateX(0px)";
+		}
+
+		function Register(){
+
+			RegForm.style.transform="translateX(0px)";
+			LoginForm.style.transform="translateX(0px)";
+			Indicator.style.transform="translateX(100px)";
+
+		}
+
+	</script>
